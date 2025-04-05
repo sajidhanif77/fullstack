@@ -40,8 +40,9 @@ app.get("/hitesh", (req, res) => {
 app.use("/api/v1/users", userRoutes);
 
 //connect to db
+console.log("MONGO_URL:", process.env.MONGO_URL);
 db();
 
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`);
+app.listen(process.env.PORT, () => {
+  console.log(`Example app listening on port ${process.env.PORT}`);
 });
