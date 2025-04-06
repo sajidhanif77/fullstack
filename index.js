@@ -30,6 +30,8 @@ app.use(express.urlencoded({ extended: true }));
 
 app.get("/", (req, res) => {
   res.send("WebDev Cohort Full Stack Project!");
+  console.log("WebDev Cohort");
+  //console.log(req.body);
 });
 
 app.get("/hitesh", (req, res) => {
