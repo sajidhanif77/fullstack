@@ -8,7 +8,7 @@ import db from "./utils/db-mongo.js";
 import cookieParser from "cookie-parser";
 
 //import all routes
-import userRoutes from "./routes/user.routes.js";
+import userRoutes from "./routes/userRoutes.js";
 const app = express();
 const port = 3000;
 
